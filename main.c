@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int rob(int* nums, int numsSize)
+#define NUMSIZE 4
+int rob(int *nums, int numsSize)
 {
     int i=0,j=1,m=0,m1=0;
     while(i<numsSize){
@@ -18,7 +18,6 @@ int rob(int* nums, int numsSize)
 
 int main(void)
 {
-
-    getchar();
-    return 0;
+   int nums[NUMSIZE]={1,2,3,1};
+   printf("%d\n",rob(nums,NUMSIZE));
 }
