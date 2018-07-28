@@ -1,0 +1,20 @@
+int main(void)
+{
+  int a[20] = {1,5,9,11,18,21,23,53,200,230,330,331,332,333,400,401,405,430,450,480};
+  int i,j=0,k;
+  scanf("%d",&k);
+  printf("k=%d\n",k);
+  for(i=(k*100);i<(k+1)*100;i++){
+     while(a[j]<i){
+     j=j+1;
+     }
+     if(j<20&&a[j]==i){
+         j=j+1;
+         }
+         else{
+         printf("%d\n",i);
+         }
+     }
+  system("PAUSE");	
+  return 0;
+}
